@@ -1,0 +1,73 @@
+The format for an IEEE STD 754-1985 Floating Point Binary Number is:
+
+Bits 1: Sign
+Bits 2-9: Exponent
+Bits 10-32: Fraction
+
+SIGN * (1 + FRACTION) * 2^EXPONENT
+
+0: 
+1: function declaration for the lambda function
+2: 
+3: start of if statement to check length of string
+4: 
+5: if not 32 bits, return incorrect length
+6: 
+7: 
+8: 
+9: set default sign to 1, or positive
+10: 
+11: 
+12: create variable to hold total, set to 0
+13: 
+14: 
+15: get the sign bit
+16: 
+17: 
+18: check if sign bit indicates negative number
+19: 
+20: if yes, set sign equal to -1
+21: 
+22: 
+23: 
+24: create string to hold the exponent bits section
+25: create string to hold the fraction bits section
+26: 
+27: 
+28: beginning of for loop, iterates through exponent bits
+29: append each exponent bit to exponent_bits
+30: 
+31: 
+32: 
+33: 
+34: get the "real exponent", which is the exponent bits converted to binary,
+    minus the exponent bias, which is 127 in MIPS
+35: get the decimal value of 2 raised to the real exponent
+36: 
+37: 
+38: begin for loop iterating through fraction bits
+39: 
+40: append each fraction bit to fraction_bits
+41: 
+42: 
+43: 
+44: let base = 2, for binary
+45: create variable to hold the decimal value of the fraction bits
+46: 
+47: begin for loop iterating through fraction bits
+48: 
+49: to get fractional binary bits, its (BIT) / 2^i, add it to sum
+50: raise the base by another power
+51: 
+52: 
+53: 
+54: calculate the conversion
+55: 
+56: 
+57: create json object to return
+58: 
+59: include the original binary number in string format
+60: include the decimal conversion in string format
+61: 
+62: 
+63: return json object
